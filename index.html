@@ -10,93 +10,66 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-8">
-          <div class="jumbotron centered">
-            <h1>Celebrity Dating</h1>
-          </div>
-        </div>
-        <div class="col-md-2">
-        </div>
-      </div>
-        <div class="row">
-          <div class="col-md-2">
-          </div>
-          <div class="col-md-8">
-            <div class="well centered">
-              <h4>Enter your information to find the celebrity of your dreams:</h4>
-              <form id="userInput">
-                <div class="form-group">
-                  <label for="name">Age</label>
-                  <input type="email" class="form-control" id="age" aria-describedby="emailHelp" placeholder="Enter age">
-                </div>
-                <div class="form-group">
-                  <label for="select">Gender</label>
-                  <select id="gender" class="form-control">
-                    <option>--Select One--</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                  </select>
-                </div>
-                <!-- <div class="form-group">
-                  <label for="select">Hobbies</label>
-                  <select id="hobby1" class="form-control">
-                    <option>--Select One--</option>
-                    <option class="swimming">Swimming</option>
-                    <option class="fashion">Fashion</option>
-                    <option class="sports">Sports</option>
-                    <option class="skating">Skating</option>
-                    <option class="photography">Photography</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="select">Hobbies</label>
-                  <select id="hobby2" class="form-control">
-                    <option>--Select One--</option>
-                    <option class="swimming">Swimming</option>
-                    <option class="fashion">Fashion</option>
-                    <option class="sports">Sports</option>
-                    <option class="skating">Skating</option>
-                    <option class="photography">Photography</option>
-                  </select>
-                </div> -->
-                <div class="data">
-                  <span>
-                    <input name="hobby" type="checkbox" value="Photography"/>
-                    <label for="hobby">Photography</label>
-                  </span>
 
-                  <span>
-                    <input name="hobby" type="checkbox" value="Fashion"/>
-                    <label for="hobby">Fashion</label>
-                  </span>
-
-                  <span>
-                    <input name="hobby" type="checkbox" value="Skating"/>
-                    <label for="hobby">Skating</label>
-                  </span>
-
-                  <!-- <input id="sobutton" type="button" value="Get Values" /> -->
-                </div>
-                <button type="submit" class="btn btn-secondary marginTop">Submit</button>
-              </form>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div id="celebrity">
-                  <img id="denzel" src="img/denzel.jpg">
-                  <img id="trump" src="img/trump.jpg">
-                  <img id="ricci" src="img/ricci.jpg">
-                  <img id="watts" src="img/watts.jpg">
-                </div>
-              </div>
-            </div>
+        <div class="jumbotron centered">
+            <h1>Who is your Celebrity Soulmate?</h1>
           </div>
-          <div class="col-md-2">
-          </div>
+
+
+
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-4">
+    <div class="well centered">
+      <h4>Enter your information to find the celebrity of your dreams:</h4>
+      <form id="userInput">
+        <div class="form-group">
+          <label for="name">Age</label>
+          <input type="text" class="form-control" id="age" placeholder="Enter age">
         </div>
-      </div>
+        <div class="form-group">
+          <label for="select">Gender</label>
+          <select id="gender" class="form-control">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="select">Hobbies</label>
+          <select id="hobby" class="form-control">
+            <option value="fashion">Fashion</option>
+            <option value="mma">MMA</option>
+            <option value="sk8">Skateboarding</option>
+            <option value="photo">Photography</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-secondary marginTop">Submit</button>
+      </form>
+</div>
+  </div>
+  <div class="col-md-4">
+    <div id="celebrity" class="centered well">
+      <p id="message">Please enter a number for your age.</p>
+      <img id="mystery" src="img/mystery.jpg">
+      <img id="beiber" src="img/beiber.png">
+      <img id="hutchenson" src="img/hutchenson.jpg">
+      <img id="timberlake" src="img/timberlake.jpg">
+      <img id="levine" src="img/levine.jpg">
+      <img id="cyrus" src="img/cyrus.jpg">
+      <img id="grande" src="img/grande.jpg">
+      <img id="stephanie" src="img/stephanie.jpg">
+      <img id="adele" src="img/adele.jpg">
+    </div>
+  </div>
+  <div class="col-md-2">
+  </div>
+
+</div>
+</div>
+
+
+
   </body>
 </html>

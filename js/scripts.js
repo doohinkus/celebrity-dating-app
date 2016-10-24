@@ -3,24 +3,55 @@ $(document).ready(function (){
       event.preventDefault();
       var age = parseInt($("#age").val());
       var gender = $("#gender").val();
-      var hobby1 = $("#hobby1").val();
-      var hobby2 = $("#hobby2").val();
-      var selection = getCheckedCheckboxesFor('hobby')
+      var hobby = $("#hobby").val();
+      var digits = /^\d+$/g;
+      var name = "";
 
-      if ((gender === "Male") && (selection.indexOf("Photography")===0)) {
-        $("#ricci").show();
-      }
-    });
+      $("#hutchenson, #beiber, #grande, #cyrus, #levine, #adele, #stephanie, #timberlake, #mystery").hide();
+      //age verification
+      if (!$("#age").val().match(digits)){
+        $("p#message").text("Please enter a number for your age.").fadeIn();
+      }else{
 
-    function getCheckedCheckboxesFor(checkboxName) {
-    var checkboxes = document.querySelectorAll('input[name="' + checkboxName + '"]:checked'), values = [];
-    Array.prototype.forEach.call(checkboxes, function(el) {
-        values.push(el.value);
+        //logic for celebrity
+        if (age < 18 && gender === "Female" && (hobby === "fashion" || hobby === "photo")){
+          name = "Josh Hutchenson";
+          $("#hutchenson").fadeIn();
+        }
+        else if (age < 18 && gender === "Female" && (hobby === "mma" || hobby === "sk8")){
+          name = "Justin Beiber";
+          $("#beiber").fadeIn();
+        }
+        else if (age < 18 && gender === "Male" && (hobby === "fashion" || hobby === "photo")){
+          name = "Ariana Grande";
+          $("#grande").fadeIn();
+        }
+        else if (age < 18 && gender === "Male" && (hobby === "mma" || hobby === "sk8")){
+          name = "Miley Cyrus";
+          $("#cyrus").fadeIn();
+        }
+        else if (age >= 18 && gender === "Female" && (hobby === "fashion" || hobby === "photo")){
+          name = "Justin Timberlake";
+          $("#timberlake").fadeIn();
+        }
+        else if (age >= 18 && gender === "Female" && (hobby === "mma" || hobby === "sk8")){
+          name = "Adam Levine";
+          $("#levine").fadeIn();
+        }
+        else if (age >= 18 && gender === "Male" && (hobby === "fashion" || hobby === "photo")){
+          name = "Adele";
+          $("#adele").fadeIn();
+        }
+        else {
+          name = "Gwen Stephanie";
+          $("#stephanie").fadeIn();
+        }
+        $("p#message").text(name);
+  }
+
+console.log(age, " ", gender, " ", hobby);
+
     });
-    // console.log(values);
-    }
-    var array = [2, 7, 7, 2];
-    console.log(array.indexOf(2))
 });
 
 
