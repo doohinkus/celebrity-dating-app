@@ -2,6 +2,7 @@
 body{
   background-image: url(../img/background.jpg);
   font-family: 'Bangers', cursive;
+  color: #ee3300
 }
 .jumbotron {
   background: none;
@@ -25,9 +26,13 @@ img {
 #hutchenson, #timberlake, #cyrus, #beiber, #adele, #grande, #stephanie, #timerlake, #levine, #message{
   display: none;
 }
+#message{
+  font-size:17pt;
+  color: #ffcc00;
+}
 h1{
   color: yellow;
-  -webkit-text-fill-color: #444;
+  -webkit-text-fill-color: #ee3300;
   /*-webkit-text-stroke-width: 2px;*/
   -webkit-text-stroke-color: white;
 
